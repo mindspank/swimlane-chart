@@ -1,0 +1,9 @@
+<ExtensionObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Definition.xsd" Label="Swimlane" Description="Swimlane extension" PageHeight="200000">
+	<Dimension Label="Lane" Initial="" DropTarget=""/>
+	<Dimension Label="Start" Initial="" DropTarget=""/>
+	<Dimension Label="Finish" Initial="" DropTarget=""/>
+	<Dimension Label="Tag" Initial="" DropTarget=""/>
+	<Dimension Label="Milestone" Initial="" DropTarget=""/>
+	<Measurement Label="Measurement" Initial=""/>
+	<Initiate Name="Chart.Dimension.0.SuppressNull" value="1"/>
+</ExtensionObject>

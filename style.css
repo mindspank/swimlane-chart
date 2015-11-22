@@ -1,0 +1,81 @@
+.swimlane svg {
+	font: 10px sans-serif;
+}
+
+.swimlane .axis path,
+.swimlane .axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.swimlane .brush .background {
+	fill: rgb(185,185,185);
+	visibility: visible !important;
+	shape-rendering: crispEdges;
+}
+.swimlane .brush .extent {
+	fill: #eee;
+	shape-rendering: crispEdges;
+}
+.swimlane .resize.w rect, .resize.e rect {
+	visibility: visible !important;
+	shape-rendering: crispEdges;
+	fill: #c3c3c3;
+}
+.d3-tip {
+  line-height: 1;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 9999;
+  font-family: 'Noto Sans Lao', 'arial', sans-serif;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
